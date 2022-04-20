@@ -6,7 +6,7 @@ const style = ({
     box: {
         backgroundColor: "yellow",
         height: "100vh",
-        width: "100vw",
+        width: "100%",
     }
 
 })

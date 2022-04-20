@@ -101,7 +101,7 @@ const Navbar = () => {
                                         to={page.id}
                                         spy={true}
                                         smooth={true}
-                                        offset={-50}
+                                        offset={-55}
                                         duration={500}
                                     >
 
@@ -127,7 +127,7 @@ const Navbar = () => {
                                 to={page.id}
                                 spy={true}
                                 smooth={true}
-                                offset={-50}
+                                offset={-55}
                                 duration={500}
                             >
 

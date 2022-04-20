@@ -6,8 +6,9 @@ import Typography from "@mui/material/Typography";
 const style = ({
     box: {
         backgroundColor: "blue",
-        height: "100vh",
-        width: "100vw"
+        height: "95vh",
+        width: "100%",
+        position: "sticky",
     }
 
 })
