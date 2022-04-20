@@ -1,7 +1,6 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import {Link, Stack} from "@mui/material";
-import {makeStyles} from "@mui/material";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
@@ -16,10 +15,12 @@ const sx = ({
         fontSize: "2.5rem"
     },
     title: {
+        fontFamily: "Roboto",
         color: "#0277bd",
         fontWeight: "bold",
     },
     details: {
+        fontFamily: "Roboto",
         color: "#565656",
         fontWeight: "bold",
         fontSize: ".9rem"
@@ -30,9 +31,11 @@ const sx = ({
         padding: "1rem 6rem"
     },
     link: {
+        fontFamily: "Roboto",
         color: "#565656",
         fontWeight: "bold",
-        fontSize: "1rem"
+        fontSize: ".9rem",
+        textDecoration: "none",
     }
 })
 
@@ -53,20 +56,20 @@ const style = ({
 const TopWrap = () => {
 
     return (
-        <Box id="top-wrap" width="100%" sx={sx.box}>
+        <Box id="top-wrap" width="100vw" sx={sx.box}>
             <Stack
                 direction={{xs: 'column', sm: 'row'}}
                 spacing={{xs: 1, sm: 2, md: 4}}
                 sx={sx.stack}
 
             >
-                <div style={style.container}>
+                <div  style={style.container}>
                     <AccessTimeIcon sx={sx.icon}/>
-                    <div style={style.titleContainer}>
-                        <Typography variant="subtitle1" noWrap={true} sx={sx.title}>
+                    <div  style={style.titleContainer}>
+                        <Typography variant=" subtitle1" noWrap={true} sx={sx.title}>
                             Lunes-Viernes
                         </Typography>
-                        <Typography variant="body2" sx={sx.details} noWrap={true}>
+                        <Typography variant=" body2" sx={sx.details} noWrap={true}>
                             08:00AM - 20:00PM
                         </Typography>
                     </div>
@@ -74,10 +77,10 @@ const TopWrap = () => {
                 <div style={style.container}>
                     <CallOutlinedIcon sx={sx.icon}/>
                     <div style={style.titleContainer}>
-                        <Typography variant="subtitle1" noWrap={true} sx={sx.title}>
+                        <Typography variant=" subtitle1" noWrap={true} sx={sx.title}>
                             Llamanos
                         </Typography>
-                        <Link href="tel:1126486047" underline="none" sx={sx.link}>
+                        <Link href="tel:1126486047" sx={sx.link} id={"top-wrap-link"}>
                             1126486047
                         </Link>
 
@@ -86,11 +89,11 @@ const TopWrap = () => {
                 <div style={style.container}>
                     <LocationOnOutlinedIcon sx={sx.icon}/>
                     <div style={style.titleContainer}>
-                        <Typography variant="subtitle1" noWrap={true} sx={sx.title}>
-                            Lunes-Viernes
+                        <Typography variant=" subtitle1" noWrap={true} sx={sx.title}>
+                            Ubicanos
                         </Typography>
-                        <Typography variant="body2" sx={sx.details} noWrap={true}>
-                            08:00AM - 20:00PM
+                        <Typography variant=" body2" sx={sx.details} noWrap={true}>
+                            La Pampa 2802 - CABA
                         </Typography>
                     </div>
                 </div>
