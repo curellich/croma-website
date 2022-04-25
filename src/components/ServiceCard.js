@@ -1,19 +1,17 @@
-import React, {useRef, useState} from 'react';
-import {Card, CardActionArea, CardActions, CardContent, CardMedia, keyframes} from "@mui/material";
+import React from 'react';
+import {Card, CardActionArea, CardContent, CardMedia} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import "../animate.css"
 import "../App.css"
 import {useInView} from "react-intersection-observer";
 
-
 const ServiceCard = (props) => {
-    const {ref, inView, entry} = useInView({
+    const {ref, inView} = useInView({
         threshold: 0.2,
     })
-    console.log(inView)
 
     return (
-        <Card sx={{maxWidth: 345, minHeight: 330}} ref={ref} className={inView ? "animate__animated animate__pulse " : ""} key={props.key}>
+        <Card sx={{maxWidth: 345, minHeight: 330}} ref={ref} className={inView ? "animate__animated animate__pulse " : ""} >
             <CardActionArea >
                 <CardMedia
                     component="img"

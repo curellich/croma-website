@@ -11,7 +11,6 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import {Link} from "react-scroll";
 
-
 const pages = [
     {
         label: "Inicio",
@@ -35,7 +34,6 @@ const pages = [
     },
 ];
 
-
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const handleOpenNavMenu = (event) => {
@@ -44,7 +42,6 @@ const Navbar = () => {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
-
 
     return (
         <AppBar position="sticky" sx={{backgroundColor: "#ab47bc"}}>

@@ -5,7 +5,6 @@ import ServiceCard from "../components/ServiceCard";
 import blanquemiento from "../assets/balqueamientoPhoto.jpeg"
 import implantes from "../assets/implantePhoto.jpg"
 import ortodoncia from "../assets/ortodonciaPhoto.jpg"
-import {useInView} from "react-intersection-observer";
 import 'animate.css';
 
 
@@ -36,10 +35,8 @@ const services = [
 
 
 const Services = () => {
-    const {ref, inView, entry} = useInView({
-        threshold: 0.3,
-    })
-    console.log(inView)
+
+
 
     return (
         <Box className={"servicesBox"} id="services">

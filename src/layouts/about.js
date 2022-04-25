@@ -1,7 +1,6 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import HeroImage from '../assets/hero-image.jpg'
 import {Paper} from "@mui/material";
 import "../App.css"
 

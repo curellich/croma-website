@@ -54,14 +54,12 @@ const style = ({
 })
 
 const TopWrap = () => {
-
     return (
         <Box id="top-wrap" width="100vw" sx={sx.box}>
             <Stack
                 direction={{xs: 'column', sm: 'row'}}
                 spacing={{xs: 1, sm: 2, md: 4}}
                 sx={sx.stack}
-
             >
                 <div  style={style.container}>
                     <AccessTimeIcon sx={sx.icon}/>
@@ -97,7 +95,6 @@ const TopWrap = () => {
                         </Typography>
                     </div>
                 </div>
-
             </Stack>
         </Box>
     );

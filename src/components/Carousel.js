@@ -1,11 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import "../App.css"
 import {images} from "../helpers/CarouselData";
-
 import Typography from "@mui/material/Typography";
-
-
-
 
 const Carousel = () => {
     const [currImg, setCurrImg] = useState(0);
@@ -18,11 +14,6 @@ const Carousel = () => {
         return () => clearInterval(timer)
     }, []);
 
-
-
-
-
-
     return (
         <div className={"carousel"}  >
             <div className={"carousel-inner"} style={{backgroundImage: `url(${images[currImg].img})`}}>
@@ -34,7 +25,6 @@ const Carousel = () => {
                         {images[currImg].description}
                     </Typography>
                 </div>
-
             </div>
         </div>
     );

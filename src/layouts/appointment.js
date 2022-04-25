@@ -1,8 +1,7 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import HeroImage from "../assets/Dentist1.jpg";
-import {Paper} from "@mui/material";
+
 
 const style = ({
     box: {
