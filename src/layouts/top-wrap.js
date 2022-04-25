@@ -70,7 +70,7 @@ const TopWrap = () => {
                             Lunes-Viernes
                         </Typography>
                         <Typography variant=" body2" sx={sx.details} noWrap={true}>
-                            08:00AM - 20:00PM
+                            09:00AM - 19:00PM
                         </Typography>
                     </div>
                 </div>

@@ -22,18 +22,13 @@ const pages = [
         id: "about"
     },
     {
-        label: "Turno",
-        id: "appointment"
-    },
-    {
         label: "Servicios",
         id: "services"
     },
-
-    {
-        label: "Blog",
-        id: "blog"
-    },
+    // {
+    //     label: "Blog",
+    //     id: "blog"
+    // },
     {
         label: "Contacto",
         id: "contact"
@@ -94,9 +89,8 @@ const Navbar = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem id={page.id + "00"} key={page.label} onClick={handleCloseNavMenu}>
+                                <MenuItem key={page.label} onClick={handleCloseNavMenu}>
                                     <Link
-                                        id={page.id + "01"}
                                         activeClass="active"
                                         to={page.id}
                                         spy={true}
@@ -104,7 +98,6 @@ const Navbar = () => {
                                         offset={-55}
                                         duration={500}
                                     >
-
                                         <Typography textAlign="center">{page.label}</Typography>
                                     </Link>
                                 </MenuItem>
@@ -122,7 +115,7 @@ const Navbar = () => {
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
                             <Link
-                                id={page.id + "03"}
+                                key={page.id}
                                 activeClass="active"
                                 to={page.id}
                                 spy={true}
@@ -130,8 +123,7 @@ const Navbar = () => {
                                 offset={-55}
                                 duration={500}
                             >
-
-                                <Button variant="text" sx={{color: "white"}} id={page.id + "04"}>{page.label}</Button>
+                                <Button variant="text" sx={{color: "white"}} >{page.label}</Button>
                             </Link>
                         ))}
                     </Box>
