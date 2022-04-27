@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/croma-website/static/css/main.c38a9d94.css",
+    "main.js": "/croma-website/static/js/main.40a8f052.js",
+    "static/media/Dentist2.jpg": "/croma-website/static/media/Dentist2.1c354b23d72479afce2a.jpg",
+    "static/media/implantePhoto.jpg": "/croma-website/static/media/implantePhoto.deb0e084ed8d7b499020.jpg",
+    "static/media/Patient1.jpg": "/croma-website/static/media/Patient1.a15ca3c981ca9d02025c.jpg",
+    "static/media/Clinic1.jpg": "/croma-website/static/media/Clinic1.afbf7e44b227ae4fd605.jpg",
+    "static/media/hero-image.jpg": "/croma-website/static/media/hero-image.1b7cbe98180068f5de8a.jpg",
+    "static/media/ortodonciaPhoto.jpg": "/croma-website/static/media/ortodonciaPhoto.2470f43f3c2e32d90356.jpg",
+    "static/media/Dentist1.jpg": "/croma-website/static/media/Dentist1.ad1d63551216389eb167.jpg",
+    "index.html": "/croma-website/index.html",
+    "main.c38a9d94.css.map": "/croma-website/static/css/main.c38a9d94.css.map",
+    "main.40a8f052.js.map": "/croma-website/static/js/main.40a8f052.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c38a9d94.css",
+    "static/js/main.40a8f052.js"
+  ]
+}
