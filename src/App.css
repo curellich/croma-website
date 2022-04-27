@@ -320,11 +320,16 @@ html {
     }
 
     .contactContainer .contactPosition {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         visibility: visible;
         width: 48%;
         height: 90%;
         background-color: #fff;
         margin: 1rem;
+
     }
 }
 

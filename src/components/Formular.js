@@ -25,7 +25,7 @@ const Formular = () => {
             <FormControl className={"formularTextArea"} margin={"dense"}>
                 <OutlinedInput id="consulta" placeholder="Escribí tu consulta" style={{height:"200px", justifyContent:"start", alignItems:"start"}}  />
             </FormControl>
-            <Button onSubmit={handleSubmit} variant={"contained"} color={"primary"}>
+            <Button onSubmit={handleSubmit} variant={"contained"} color={"secondary"}>
                 Enviar
             </Button>
         </div>
