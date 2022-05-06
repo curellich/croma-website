@@ -25,7 +25,6 @@ const Contact = () => {
                         ¿Dónde estamos?
                     </Typography>
                 <Map/>
-
                 </Paper>
             </div>
 
