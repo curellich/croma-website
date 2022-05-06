@@ -3,13 +3,13 @@ import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import Credential from "../credential";
 
 const containerStyle = {
-    width: '400px',
-    height: '400px'
+    width: '650px',
+    height: '650px'
 };
 
 const center = {
-    lat: -3.745,
-    lng: -38.523
+    lat: -34.56697296066992,
+    lng: -58.45798661765905
 };
 
 function Map() {
@@ -26,7 +26,7 @@ function Map() {
         setMap(map)
     }, [])
 
-    const onUnmount = React.useCallback(function callback(map) {
+    const onUnmount = React.useCallback(function callback() {
         setMap(null)
     }, [])
 
@@ -34,7 +34,7 @@ function Map() {
         <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
-            zoom={10}
+            zoom={19}
             onLoad={onLoad}
             onUnmount={onUnmount}
         >

@@ -1,5 +1,6 @@
 {
   "name": "croma-web",
+  "homepage": "https://curellich.github.io/croma-website/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,7 @@
   },
   "scripts": {
     "clean" : "gh-pages-clean",
-    "predeploy": "npm run buil",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
